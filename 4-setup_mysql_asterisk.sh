@@ -36,6 +36,7 @@ CREATE USER 'asterisk'@'localhost' IDENTIFIED BY '123456';
 CREATE DATABASE asterisk;
 GRANT ALL privileges on asterisk.* to 'asterisk'@'localhost' identified by '123456';
 FLUSH privileges;
+quit
 
 ##Configurando o arquivo config.ini usuario e senha do banco de dados
 vim /usr/src/asterisk/contrib/ast-db-manage/config.ini
