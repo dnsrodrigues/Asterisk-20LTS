@@ -13,7 +13,6 @@
 vim /etc/ssh/sshd_config
 editar arquivo na linha "PermitRootLogin" para “yes” e salvar
 Resetar o serviço: "sudo service ssh restart"
-
 ```
 
 - Instalação do Asterisk 20 LTS - [2 - Install Asterisk](2-install_asterisk.sh)<br />
@@ -36,7 +35,6 @@ Resetar o serviço: "sudo service ssh restart"
 /etc/asterisk/cel.conf
 /etc/asterisk/cel_pgsql.conf
 /etc/asterisk/pjsip.conf
-
 ```
 
 - Limpeza de arquivos não usados no Asterisk - [3 - Cleanfiles_asterisk](3-cleanfiles_asterisk.sh)<br />
