@@ -1,6 +1,7 @@
 #!/bin/bash
 ##install mysql for asterisk20lts, fazer manualmente.
 
+cd
 apt update
 apt install -y unixodbc odbcinst mariadb-client mariadb-server odbc-mariadb
 systemctl enable mariadb
