@@ -15,7 +15,7 @@ pip install alembic
 pip install psycopg2-binary
 pip install mysql-connector-python
 apt install python3-pymysql/stable python3-mysqldb/stable -y
-apt-get install python3-dev default-libmysqlclient-dev build-essential
+apt-get install python3-dev default-libmysqlclient-dev build-essential -y
 pip install mysqlclient
 pip install "importlib_metadata==1.5.2"
 pip install "zipp==1.2.0"
