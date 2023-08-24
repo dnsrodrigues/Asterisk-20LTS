@@ -1,9 +1,6 @@
 # Repositório de instalção do Asterisk 20LTS no Debin 12
 
 
-- [DUMP Database](sql/dump-mysql.sql)
-
-
 ## Instalção:
 - Customização Terminal - [1 - Terminal Custon](1-terminal_custom.sh)<br />
 ``` curl -L https://raw.githubusercontent.com/dnsrodrigues/Asterisk-20LTS/main/1-terminal_custom.sh | bash ```<br />
@@ -41,6 +38,9 @@ Resetar o serviço: "sudo service ssh restart"
 ``` curl -L https://raw.githubusercontent.com/dnsrodrigues/Asterisk-20LTS/main/3-cleanfiles_asterisk.sh | bash ```
 
 - Instalação do MySql e bibliotecas para utilizar com o Asterisk - [4 - Setup_mysql_asterisk](4-setup_mysql_asterisk.sh)<br /><br />
+
+
+- [DUMP Database](sql/dump-mysql.sql)<br />
 
 
 *Tutorial:* [![Canal Youtube @analistabash](https://www.bashtech.com.br/youtube_button_icon_151827_96x.png)](https://www.youtube.com/watch?v=2otkd-7HGk0&list=PLk0v4L7lcjDfcKUxIDybvuKTgDuaR31Kn)
