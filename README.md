@@ -44,6 +44,8 @@ Resetar o serviço: "sudo service ssh restart"
 cd /tmp/
 mv asterisk/*.conf /etc/asterisk/
 mv asterisk/*.ini /etc/
+rm -rf asterisk.tar
+rm -rf asterisk/
 ```
 
 - [DUMP Database](sql/dump-mysql.sql)<br />
