@@ -39,6 +39,12 @@ Resetar o serviço: "sudo service ssh restart"
 
 - Instalação do MySql e bibliotecas para utilizar com o Asterisk - [4 - Setup_mysql_asterisk](4-setup_mysql_asterisk.sh)<br /><br />
 
+**-> Mover arquivos de configuração para os diretorios corretos**<br /> 
+```
+cd /tmp/
+mv asterisk/*.conf /etc/asterisk/
+mv asterisk/*.ini /etc/
+```
 
 - [DUMP Database](sql/dump-mysql.sql)<br />
 
