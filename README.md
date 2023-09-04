@@ -48,6 +48,13 @@ rm -rf asterisk.tar
 rm -rf asterisk/
 ```
 
+**-> Configurar os arquivos cdr_adaptive_odbc.conf e res_odbc.conf com dados de acesso do BD**<br /> 
+```
+cd /etc/asterisk/
+vim cdr_adaptive_odbc.conf
+vim res_odbc.conf
+```
+
 - [DUMP Database](sql/dump-mysql.sql)<br />
 
 
