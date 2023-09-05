@@ -56,50 +56,8 @@ vim res_odbc.conf
 
 cd /etc/
 vim odbc.ini
-------------------------------------------------------
-[asterisk]
-Description = MySQL Asterisk
-Driver = MariaDB Unicode
-Database = asterisk
-Server = localhost
-User = asterisk
-Password = 123456
-Port = 3306
-Socket = /var/run/mysqld/mysqld.sock
-------------------------------------------------------
-
-cd /etc/
 vim odbcinst.ini
-------------------------------------------------------
-[PostgreSQL ANSI]
-Description=PostgreSQL ODBC driver (ANSI version)
-Driver=psqlodbca.so
-Setup=libodbcpsqlS.so
-Debug=0
-CommLog=1
-UsageCount=1
 
-[PostgreSQL Unicode]
-Description=PostgreSQL ODBC driver (Unicode version)
-Driver=psqlodbcw.so
-Setup=libodbcpsqlS.so
-Debug=0
-CommLog=1
-UsageCount=1
-
-[MariaDB Unicode]
-Driver=libmaodbc.so
-Description=MariaDB Connector/ODBC (Unicode)
-Threading=0
-UsageCount=1
-
-[MariaDB Unicode]
-Driver=libmaodbc.so
-Description=MariaDB Connector/ODBC (Unicode)
-Threading=0
-UsageCount=1
-------------------------------------------------------
-```
 
 - [DUMP Database](sql/dump-mysql.sql)<br />
 
