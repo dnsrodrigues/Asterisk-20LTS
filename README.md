@@ -88,13 +88,13 @@ CommLog=1
 UsageCount=1
 
 [MariaDB Unicode]
-Driver=Libmaodbc.so
+Driver=libmaodbc.so
 Description=MariaDB Connector/ODBC (Unicode)
 Threading=0
 UsageCount=1
 
 [MariaDB Unicode]
-Driver=Libmaodbc.so
+Driver=libmaodbc.so
 Description=MariaDB Connector/ODBC (Unicode)
 Threading=0
 UsageCount=1
