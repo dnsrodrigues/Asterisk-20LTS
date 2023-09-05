@@ -16,7 +16,7 @@ Resetar o serviço: "sudo service ssh restart"
 ``` curl -L https://raw.githubusercontent.com/dnsrodrigues/Asterisk-20LTS/main/2-install_asterisk.sh | bash ```
 
 - Instalação Asterisk - Material Extra:<br />
-``` cd /tmp/ && curl -fsSL https://github.com/dnsrodrigues/Asterisk-20LTS/releases/download/filesconfig/asterisk.tar -o asterisk.tar && tar xvf asterisk.tar ```
+``` cd /tmp/ && curl -fsSL https://github.com/dnsrodrigues/Asterisk-20LTS/releases/download/configfiles/asterisk.tar -o asterisk.tar && tar xvf asterisk.tar ```
 
 **-> config**<br /> 
 ```
