@@ -57,6 +57,7 @@ vim res_odbc.conf
 cd /etc/
 vim odbc.ini
 vim odbcinst.ini
+```
 
 
 - [DUMP Database](sql/dump-mysql.sql)<br />
