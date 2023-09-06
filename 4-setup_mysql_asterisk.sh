@@ -77,7 +77,7 @@ quit;
 systemctl restart apache2
 
 ##Instalar o php
-apt install php 8.*-mysqli
+apt install php8.*-mysqli
 
 ##Restart no apache
 systemctl restart apache2
