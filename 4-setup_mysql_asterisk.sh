@@ -36,7 +36,7 @@ CREATE USER 'asterisk'@'localhost' IDENTIFIED BY '123456';
 CREATE DATABASE asterisk;
 GRANT ALL privileges on asterisk.* to 'asterisk'@'localhost' identified by '123456';
 FLUSH privileges;
-quit
+quit;
 
 ##Configurando o arquivo config.ini usuario e senha do banco de dados
 vim /usr/src/asterisk/contrib/ast-db-manage/config.ini
@@ -52,3 +52,28 @@ mysql -u asterisk -p
 show databases;
 use asterisk;
 show tables;
+
+##Instalar phpmyadmin e apache2
+apt install phpmyadmin -y
+
+##Criando usuário e senha para o banco de dados phpmyadmin
+mysql -u root -p
+
+'''
+show databases;
+use phpmyadmin;
+CREATE USER 'user'@'localhost' IDENTIFIED BY '123456';
+grant all on phpmyadmin.*to user@localhost;
+FLUSH privileges;
+quit;
+'''
+
+##Restart no apache
+systemctl restart apache2
+
+##Instalar o php
+apt install php 8.*-mysqli
+
+##Restart no apache
+systemctl restart apache2
+
