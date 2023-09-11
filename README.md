@@ -14,24 +14,8 @@ apt install curl -y
 - Instalação do Asterisk 20 LTS - [2 - Install Asterisk](2-install_asterisk.sh)<br />
 ``` curl -L https://raw.githubusercontent.com/dnsrodrigues/Asterisk-20LTS/main/2-install_asterisk.sh | bash ```
 
-- Instalação Asterisk - Material Extra:<br />
+- Instalação Asterisk - Material extra, arquivos de configuração:<br />
 ``` cd /tmp/ && curl -fsSL https://github.com/dnsrodrigues/Asterisk-20LTS/releases/download/configfiles/asterisk.tar -o asterisk.tar && tar xvf asterisk.tar ```
-
-**-> config**<br /> 
-```
-/etc/odbc.ini
-/etc/odbcinst.ini
-/etc/asterisk/res_odbc.conf
-/etc/asterisk/res_pgsql.conf
-/etc/asterisk/sorcery.conf
-/etc/asterisk/extconfig.conf
-/etc/asterisk/cdr.conf
-/etc/asterisk/cdr_adaptive_odbc.conf
-/etc/asterisk/cel_odbc.conf
-/etc/asterisk/cel.conf
-/etc/asterisk/cel_pgsql.conf
-/etc/asterisk/pjsip.conf
-```
 
 - Limpeza de arquivos não usados no Asterisk - [3 - Cleanfiles_asterisk](3-cleanfiles_asterisk.sh)<br />
 ``` curl -L https://raw.githubusercontent.com/dnsrodrigues/Asterisk-20LTS/main/3-cleanfiles_asterisk.sh | bash ```
