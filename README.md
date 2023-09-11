@@ -3,8 +3,9 @@
 
 ## Instalção:<br />
 
+**-> Acessar como root su -**<br /> 
 ```
-apt install curl
+apt install curl -y
 ```
 
 - Customização Terminal - [1 - Terminal Custon](1-terminal_custom.sh)<br />
