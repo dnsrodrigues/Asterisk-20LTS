@@ -11,13 +11,6 @@ apt install curl -y
 - Customização Terminal - [1 - Terminal Custon](1-terminal_custom.sh)<br />
 ``` curl -L https://raw.githubusercontent.com/dnsrodrigues/Asterisk-20LTS/main/1-terminal_custom.sh | bash ```<br />
 
-**-> Liberar acesso direto com root**<br /> 
-```
-vim /etc/ssh/sshd_config
-editar arquivo na linha "PermitRootLogin" para “yes” e salvar
-Resetar o serviço: "sudo service ssh restart"
-```
-
 - Instalação do Asterisk 20 LTS - [2 - Install Asterisk](2-install_asterisk.sh)<br />
 ``` curl -L https://raw.githubusercontent.com/dnsrodrigues/Asterisk-20LTS/main/2-install_asterisk.sh | bash ```
 
