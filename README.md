@@ -3,7 +3,7 @@
 
 ## Instalção:<br />
 
-**-> Acessar como root su -**<br /> 
+**-> Acessar como root**<br /> 
 ```
 apt install curl -y
 ```
