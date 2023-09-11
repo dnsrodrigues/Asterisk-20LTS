@@ -1,7 +1,12 @@
 # Repositório de instalção do Asterisk 20LTS no Debin 12
 
 
-## Instalção:
+## Instalção:<br />
+
+```
+sudo apt install curl
+```
+
 - Customização Terminal - [1 - Terminal Custon](1-terminal_custom.sh)<br />
 ``` curl -L https://raw.githubusercontent.com/dnsrodrigues/Asterisk-20LTS/main/1-terminal_custom.sh | bash ```<br />
 
