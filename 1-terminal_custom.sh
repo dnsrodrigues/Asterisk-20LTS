@@ -14,7 +14,7 @@ echo "PS1='\[\033[00;32m\]┌─[\[\033[00;31m\]\u\[\033[00m\]@\[\033[01;34m\]\h
 
 ## customizações de terminal e log
 
-nano /etc/ssh/sshd_config
+nano /etc/ssh/sshd_config &
 read -p "Pressione Enter para continuar..."
 echo "Editado permição de acesso root SSH"
 
