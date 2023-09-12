@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 echo -e "\033[01;31mcustomizações de terminal e log\033[01;31m"
 ## customizações de terminal e log
 apt install wget vim atop htop nmap whowatch mtr htop rsync acl locate ethtool screen lshw hdparm ttyrec tcpdump auditd sudo openssh-server libsox-fmt-base dialog unzip autoconf -y
