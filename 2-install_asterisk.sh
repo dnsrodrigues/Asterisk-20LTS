@@ -184,7 +184,7 @@ echo "---------- END build ----------"
   make && \
   make install && \
   ldconfig
-
+  
 sed -i -E 's/^;(run)(user|group)/\1\2/' /etc/asterisk/asterisk.conf
 
 mkdir -p /usr/src/codecs/opus
@@ -195,7 +195,7 @@ cp codec_opus_config-en_US.xml /var/lib/asterisk/documentation/
 
 mkdir -p /etc/asterisk/ \
          /var/spool/asterisk/fax
-
+		 
 sudo groupadd asterisk
 sudo useradd -r -d /var/lib/asterisk -g asterisk asterisk
 sudo usermod -aG audio,dialout asterisk

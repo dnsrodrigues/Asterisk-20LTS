@@ -81,8 +81,6 @@ read -p "Configurando parametros do MariaDB Enter para continuar..."
 /usr/bin/mysql_secure_installation
 
 
-
-
 ##Acessando o banco de dados
 # mysql -u root
 
