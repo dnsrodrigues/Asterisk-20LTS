@@ -27,9 +27,9 @@ bash 9-install_completa.sh
 
 - Limpeza de arquivos não usados no Asterisk - [3 - Cleanfiles_asterisk](3-cleanfiles_asterisk.sh)<br />
 
-- Instalação do MySql e bibliotecas para utilizar com o Asterisk - [4 - Setup_mysql_asterisk](4-setup_mysql_asterisk.sh)<br /><br />
+- Instalação do MySql e bibliotecas para utilizar com o Asterisk - [4 - Setup_mysql_asterisk](4-setup_mysql_asterisk.sh)<br />
 
-- Instalação completa - [9 - Install completa](4-setup_mysql_asterisk.sh)<br /><br />
+- Instalação completa - [9 - Install completa](https://github.com/dnsrodrigues/Asterisk-20LTS/blob/main/3-cleanfiles_asterisk.sh)<br /><br />
 
 **-> Mover arquivos de configuração para os diretorios corretos**<br /> 
 ```
