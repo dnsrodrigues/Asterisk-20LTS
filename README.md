@@ -18,6 +18,7 @@ bash 1-terminal_custom.sh
 bash 2-install_asterisk.sh
 bash 3-cleanfiles_asterisk.sh
 bash 4-setup_mysql_asterisk.sh
+bash 9-install_completa.sh
 ```
 
 - Customização Terminal - [1 - Terminal Custon](1-terminal_custom.sh)<br />
@@ -27,6 +28,8 @@ bash 4-setup_mysql_asterisk.sh
 - Limpeza de arquivos não usados no Asterisk - [3 - Cleanfiles_asterisk](3-cleanfiles_asterisk.sh)<br />
 
 - Instalação do MySql e bibliotecas para utilizar com o Asterisk - [4 - Setup_mysql_asterisk](4-setup_mysql_asterisk.sh)<br /><br />
+
+- Instalação completa - [9 - Install completa](4-setup_mysql_asterisk.sh)<br /><br />
 
 **-> Mover arquivos de configuração para os diretorios corretos**<br /> 
 ```
