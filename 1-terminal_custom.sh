@@ -13,8 +13,7 @@ echo "PS1='\[\033[00;32m\]┌─[\[\033[00;31m\]\u\[\033[00m\]@\[\033[01;34m\]\h
 ## editar permição de acesso root SSH
 nano /etc/ssh/sshd_config
 
-## read -p "Pressione Enter para continuar..."
-echo "Editado permição de acesso root SSH"
+read -p "Editado permição de acesso root SSH, Enter para continuar..."
 
 ## resetar ssh
 sudo service ssh restart
