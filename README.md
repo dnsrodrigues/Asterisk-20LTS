@@ -30,7 +30,7 @@ bash 4-setup_mysql_asterisk.sh
 
 **-> Mover arquivos de configuração para os diretorios corretos**<br /> 
 ```
-cd /tmp/
+cd /tmp/sh
 mv asterisk/*.conf /etc/asterisk/
 mv asterisk/*.ini /etc/
 rm -rf asterisk.tar
