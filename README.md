@@ -13,7 +13,7 @@ apt install curl -y
 ``` cd /tmp/ && curl -fsSL https://github.com/dnsrodrigues/Asterisk-20LTS/releases/download/configfiles/asterisk.tar -o asterisk.tar && tar xvf asterisk.tar ```
 
 ```
-cd /sh
+cd /tmp/sh
 bash 1-terminal_custom.sh
 bash 2-install_asterisk.sh
 bash 3-cleanfiles_asterisk.sh
@@ -30,7 +30,7 @@ bash 4-setup_mysql_asterisk.sh
 
 **-> Mover arquivos de configuração para os diretorios corretos**<br /> 
 ```
-cd /tmp/sh
+cd /tmp/
 mv asterisk/*.conf /etc/asterisk/
 mv asterisk/*.ini /etc/
 rm -rf asterisk.tar
