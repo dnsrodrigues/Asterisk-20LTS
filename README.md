@@ -12,6 +12,14 @@ apt install curl -y
 - Arquivos de configuração e scripts sh de instalação:<br />
 ``` cd /tmp/ && curl -fsSL https://github.com/dnsrodrigues/Asterisk-20LTS/releases/download/configfiles/asterisk.tar -o asterisk.tar && tar xvf asterisk.tar ```
 
+```
+cd /sh
+bash 1-terminal_custom.sh
+bash 2-install_asterisk.sh
+bash 3-cleanfiles_asterisk.sh
+bash 4-setup_mysql_asterisk.sh
+```
+
 - Customização Terminal - [1 - Terminal Custon](1-terminal_custom.sh)<br />
 
 - Instalação do Asterisk 20 LTS - [2 - Install Asterisk](2-install_asterisk.sh)<br />
