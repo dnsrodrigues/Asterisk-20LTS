@@ -5,20 +5,18 @@
 
 **-> Acessar como root**<br /> 
 ```
+apt update && apt upgrade -y
 apt install curl -y
 ```
 
-- Customização Terminal - [1 - Terminal Custon](1-terminal_custom.sh)<br />
-``` curl -L https://raw.githubusercontent.com/dnsrodrigues/Asterisk-20LTS/main/1-terminal_custom.sh | bash ```<br />
-
-- Instalação do Asterisk 20 LTS - [2 - Install Asterisk](2-install_asterisk.sh)<br />
-``` curl -L https://raw.githubusercontent.com/dnsrodrigues/Asterisk-20LTS/main/2-install_asterisk.sh | bash ```
-
-- Instalação Asterisk - Material extra, arquivos de configuração:<br />
+- Arquivos de configuração e scripts sh de instalação:<br />
 ``` cd /tmp/ && curl -fsSL https://github.com/dnsrodrigues/Asterisk-20LTS/releases/download/configfiles/asterisk.tar -o asterisk.tar && tar xvf asterisk.tar ```
 
+- Customização Terminal - [1 - Terminal Custon](1-terminal_custom.sh)<br />
+
+- Instalação do Asterisk 20 LTS - [2 - Install Asterisk](2-install_asterisk.sh)<br />
+
 - Limpeza de arquivos não usados no Asterisk - [3 - Cleanfiles_asterisk](3-cleanfiles_asterisk.sh)<br />
-``` curl -L https://raw.githubusercontent.com/dnsrodrigues/Asterisk-20LTS/main/3-cleanfiles_asterisk.sh | bash ```
 
 - Instalação do MySql e bibliotecas para utilizar com o Asterisk - [4 - Setup_mysql_asterisk](4-setup_mysql_asterisk.sh)<br /><br />
 
