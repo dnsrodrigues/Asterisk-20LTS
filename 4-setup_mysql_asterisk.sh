@@ -1,85 +1,77 @@
 #!/bin/bash
 ##install mysql for asterisk20lts, fazer manualmente.
 
-read -p "Acessar pasta rais Enter para continuar..."
 cd /
 
-read -p "Fazer update Enter para continuar..."
+##Fazer update
 apt update
 
-read -p "Instalar Mariadb Enter para continuar..."
+##Instalar Mariadb
 apt install -y unixodbc odbcinst mariadb-client mariadb-server odbc-mariadb
 
-read -p "Desabilitar Mariadb Enter para continuar..."
+##Desabilitar Mariadb
 systemctl enable mariadb
 
-read -p "Start Mariadb Enter para continuar..."
+##Start Mariadb
 systemctl start mariadb
 
-read -p "Instalar python3-pip Enter para continuar..."
+##Instalar python3-pip
 apt install python3-pip -y
 
-read -p "Instalar python3.11-venv Enter para continuar..."
+##Instalar python3.11-venv
 apt install python3.11-venv -y
 
-read -p "Criar ambiente virual venv Enter para continuar..."
+##Criar ambiente virual venv
 python3 -m venv venv
 
-read -p "Ativar ambiente virual venv Enter para continuar..."
+##Ativar ambiente virual venv
 . /venv/bin/activate
 
-read -p "Instalar alembic Enter para continuar..."
+##Instalar alembic
 pip install alembic
 
-read -p "Instalar psycopg2-binary Enter para continuar..."
+##Instalar psycopg2-binary
 pip install psycopg2-binary
 
-read -p "Instalar mysql-connector-python Enter para continuar..."
+##Instalar mysql-connector-python
 pip install mysql-connector-python
 
-read -p "Instalar python3-pymysql Enter para continuar..."
+##Instalar python3-pymysql
 apt install python3-pymysql/stable python3-mysqldb/stable -y
 
-read -p "Instalar python3-dev Enter para continuar..."
+##Instalar python3-dev
 apt-get install python3-dev default-libmysqlclient-dev build-essential -y
 
-read -p "Instalar mysqlclient Enter para continuar..."
+##Instalar mysqlclient
 pip install mysqlclient
 
-read -p "Instalar importlib_metadata==1.5.2 Enter para continuar..."
+##Instalar importlib_metadata==1.5.2
 pip install "importlib_metadata==1.5.2"
 
-read -p "Instalar zipp==1.2.0 Enter para continuar..."
+##Instalar zipp==1.2.0
 pip install "zipp==1.2.0"
 
-read -p "Instalar configparser==3.8.1 Enter para continuar..."
+##Instalar configparser==3.8.1
 pip install "configparser==3.8.1"
 
 ##Instalar phpmyadmin e apache2
-read -p "Instalar phpmyadmin e apache2 Enter para continuar..."
 apt install phpmyadmin -y
 
 ##Restart no apache
-read -p "Restart apache2 Enter para continuar..."
 systemctl restart apache2
 
 ##Instalar o php
-read -p "Instalar PHP8 e mysqli Enter para continuar..."
 apt install php8.*-mysqli
 
 ##Restart no apache
-read -p "Restart apache2 Enter para continuar..."
 systemctl restart apache2
 
 ##Renomeando arquivo de configuração
-read -p "Renomeando arquivo de configuração Enter para continuar..."
 cd /usr/src/asterisk/contrib/ast-db-manage
 mv config.ini.sample config.ini
 
 ##Configurando parametros do MariaDB como senha
-read -p "Configurando parametros do MariaDB Enter para continuar..."
 /usr/bin/mysql_secure_installation
-
 
 ##Acessando o banco de dados
 # mysql -u root
