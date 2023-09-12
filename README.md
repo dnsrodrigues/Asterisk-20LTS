@@ -29,7 +29,7 @@ bash 9-install_completa.sh
 
 - Instalação do MySql e bibliotecas para utilizar com o Asterisk - [4 - Setup_mysql_asterisk](4-setup_mysql_asterisk.sh)<br />
 
-- Instalação completa - [9 - Install completa](https://github.com/dnsrodrigues/Asterisk-20LTS/blob/main/3-cleanfiles_asterisk.sh)<br /><br />
+- Instalação completa - [9 - Install completa](https://github.com/dnsrodrigues/Asterisk-20LTS/blob/main/9-install_completa.sh)<br /><br />
 
 **-> Mover arquivos de configuração para os diretorios corretos**<br /> 
 ```
