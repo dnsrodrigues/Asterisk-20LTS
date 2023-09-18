@@ -1,6 +1,7 @@
 #!/bin/bash
 
-echo -e "\033[01;31mcustomizações de terminal e log\033[01;31m"
+read -p "\e[1;32mINICIANDO INSTALAÇÃO, APERTE ENTER...\e[0m"
+echo -e "customizações de terminal e log"
 ## customizações de terminal e log
 apt install wget vim atop htop nmap whowatch mtr htop rsync acl locate ethtool screen lshw hdparm ttyrec tcpdump auditd sudo openssh-server libsox-fmt-base dialog unzip autoconf -y
 echo 'HISTTIMEFORMAT="%d/%m/%Y - %T => "' >> ~/.bashrc
@@ -15,7 +16,7 @@ echo "#"
 echo "#"
 echo "#"
 echo "#"
-echo -e "\033[01;31meditar permição de acesso root SSH\033[01;31m"
+echo -e "editar permição de acesso root SSH"
 ## editar permição de acesso root SSH
 nano /etc/ssh/sshd_config
 
@@ -23,7 +24,7 @@ echo "#"
 echo "#"
 echo "#"
 echo "#"
-echo -e "\033[01;31mresetar ssh\033[01;31m"
+echo -e "resetar ssh"
 ## resetar ssh
 sudo service ssh restart
 
@@ -32,7 +33,7 @@ echo "#"
 echo "#"
 echo "#"
 echo "#"
-read -p "\033[01;31mComeçar a instalar o Asterisk, enter para continuar...\033[01;31m"
+read -p "\e[1;31mComeçar a instalar o Asterisk, enter para continuar...\e[0m"
 
 ## ambiente de produção - Asterisk 20
 set -ueo pipefail
@@ -261,7 +262,7 @@ echo "#"
 echo "#"
 echo "#"
 echo "#"
-read -p "\033[01;31mLimpar arquivos desnecessarios da instalação do asterisk, enter para continuar...\033[01;31m"
+read -p "\e[1;31mLimpar arquivos desnecessarios da instalação do asterisk, enter para continuar...\e[0m"
 
 ##clean files, not used 
 echo "" > /etc/asterisk/func_odbc.conf
@@ -277,7 +278,7 @@ echo "#"
 echo "#"
 echo "#"
 echo "#"
-read -p "\033[01;31mInstalar o Mysql...\033[01;31m"
+read -p "\e[1;31mInstalar o Mysql, enter para continuar...\e[0m"
 
 ##install mysql for asterisk20lts, fazer manualmente.
 
@@ -352,3 +353,7 @@ mv config.ini.sample config.ini
 
 ##Configurando parametros do MariaDB como senha
 /usr/bin/mysql_secure_installation
+echo "#"
+echo "#"
+echo "#"
+echo -e "\e[1;32mINSTALAÇÃO FINALIZADA COM SUCESSO........\e[0m"
