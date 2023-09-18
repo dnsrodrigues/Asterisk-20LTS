@@ -103,21 +103,6 @@ mv config.ini.sample config.ini
 # quit;
 # '''
 
-##Criando usuário e senha para o banco de dados phpmyadmin
-# mysql -u root -p
-
-# '''
-# show databases;
-# use phpmyadmin;
-# CREATE USER 'user'@'localhost' IDENTIFIED BY '123456';
-# grant all on phpmyadmin.*to user@localhost;
-# FLUSH privileges;
-# quit;
-# '''
-
-##Acessar BD pelo phpmyadmin
-# ip-da-maquina/phpmyadmin (no navegador)
-
 ##Criar tabela faltante
 # '''
 # CREATE TABLE `queue_log` (
@@ -139,3 +124,18 @@ mv config.ini.sample config.ini
 #   KEY `event` (`event`)
 # ) DEFAULT CHARSET=utf8
 # '''
+
+##Criando usuário e senha para o banco de dados phpmyadmin
+# mysql -u root -p
+
+# '''
+# show databases;
+# use phpmyadmin;
+# CREATE USER 'user'@'localhost' IDENTIFIED BY '123456';
+# grant all on phpmyadmin.*to user@localhost;
+# FLUSH privileges;
+# quit;
+# '''
+
+##Acessar BD pelo phpmyadmin
+# ip-da-maquina/phpmyadmin (no navegador)
