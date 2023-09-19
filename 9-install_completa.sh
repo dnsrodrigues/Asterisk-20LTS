@@ -1,6 +1,6 @@
 #!/bin/bash
 
-read -p "\e[1;32mINICIANDO INSTALAÇÃO, APERTE ENTER...\e[0m"
+read -p "INICIANDO INSTALAÇÃO, APERTE ENTER..."
 echo -e "customizações de terminal e log"
 ## customizações de terminal e log
 apt install wget vim atop htop nmap whowatch mtr htop rsync acl locate ethtool screen lshw hdparm ttyrec tcpdump auditd sudo openssh-server libsox-fmt-base dialog unzip autoconf -y
@@ -33,7 +33,7 @@ echo "#"
 echo "#"
 echo "#"
 echo "#"
-read -p "\e[1;31mComeçar a instalar o Asterisk, enter para continuar...\e[0m"
+read -p "Começar a instalar o Asterisk, enter para continuar..."
 
 ## ambiente de produção - Asterisk 20
 set -ueo pipefail
@@ -262,7 +262,7 @@ echo "#"
 echo "#"
 echo "#"
 echo "#"
-read -p "\e[1;31mLimpar arquivos desnecessarios da instalação do asterisk, enter para continuar...\e[0m"
+read -p "Limpar arquivos desnecessarios da instalação do asterisk, enter para continuar..."
 
 ##clean files, not used 
 echo "" > /etc/asterisk/func_odbc.conf
@@ -278,7 +278,7 @@ echo "#"
 echo "#"
 echo "#"
 echo "#"
-read -p "\e[1;31mInstalar o Mysql, enter para continuar...\e[0m"
+read -p "Instalar o Mysql, enter para continuar..."
 
 ##install mysql for asterisk20lts, fazer manualmente.
 
@@ -356,4 +356,4 @@ mv config.ini.sample config.ini
 echo "#"
 echo "#"
 echo "#"
-echo -e "\e[1;32mINSTALAÇÃO FINALIZADA COM SUCESSO........\e[0m"
+echo -e "INSTALAÇÃO FINALIZADA COM SUCESSO........"
