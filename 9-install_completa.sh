@@ -356,4 +356,4 @@ mv config.ini.sample config.ini
 echo "#"
 echo "#"
 echo "#"
-echo -e "INSTALAÇÃO FINALIZADA COM SUCESSO........"
+echo -e "\e[1;32mINSTALAÇÃO FINALIZADA COM SUCESSO........\e[0m"
