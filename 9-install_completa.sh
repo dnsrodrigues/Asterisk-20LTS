@@ -1,7 +1,11 @@
 #!/bin/bash
 
-read -p "INICIANDO INSTALAÇÃO, APERTE ENTER..."
-echo -e "customizações de terminal e log"
+echo -e "\e[1;36mINICIANDO INSTALAÇÃO, APERTE ENTER\e[0m"
+read -p ""
+
+echo -e "\e[1;35m#\e[0m"
+echo -e "\e[1;35m#\e[0m"
+echo -e "\e[1;35mCUSTOMIZAÇÕES DE TERMINAL E LOG\e[0m"
 ## customizações de terminal e log
 apt install wget vim atop htop nmap whowatch mtr htop rsync acl locate ethtool screen lshw hdparm ttyrec tcpdump auditd sudo openssh-server libsox-fmt-base dialog unzip autoconf -y
 echo 'HISTTIMEFORMAT="%d/%m/%Y - %T => "' >> ~/.bashrc
@@ -12,28 +16,23 @@ echo "export HISTCONTROL=ignoredups:erasedups" >> ~/.bashrc
 cp ~/.bashrc{,.orig}
 echo "PS1='\[\033[00;32m\]┌─[\[\033[00;31m\]\u\[\033[00m\]@\[\033[01;34m\]\h\[\033[00;32m\]]──[\[\033[01;33m\]\A\[\033[00;32m\]]──[\[\033[00m\]\w\[\033[00;32m\]]\n└─[\!]─>\$\[\033[00;32m\] '" >> ~/.bashrc
 
-echo "#"
-echo "#"
-echo "#"
-echo "#"
-echo -e "editar permição de acesso root SSH"
+echo -e "\e[1;35m#\e[0m"
+echo -e "\e[1;35m#\e[0m"
+echo -e "\e[1;35mEDITAR PERMISSÃO DE ACESSO ROOT SSH\e[0m"
 ## editar permição de acesso root SSH
 nano /etc/ssh/sshd_config
 
-echo "#"
-echo "#"
-echo "#"
-echo "#"
-echo -e "resetar ssh"
+echo -e "\e[1;35m#\e[0m"
+echo -e "\e[1;35m#\e[0m"
+echo -e "\e[1;35mRESETAR SSH\e[0m"
 ## resetar ssh
 sudo service ssh restart
 
 
-echo "#"
-echo "#"
-echo "#"
-echo "#"
-read -p "Começar a instalar o Asterisk, enter para continuar..."
+echo -e "\e[1;35m#\e[0m"
+echo -e "\e[1;35m#\e[0m"
+echo -e "\e[1;36mCOMEÇAR A INSTALAR O ASTERISK, ENTER PARA CONTINUAR\e[0m"
+read -p ""
 
 ## ambiente de produção - Asterisk 20
 set -ueo pipefail
@@ -258,11 +257,10 @@ DEBIAN_FRONTEND=noninteractive apt-get --yes -qq purge \
 > /dev/null
 rm -rf /var/lib/apt/lists/*
 
-echo "#"
-echo "#"
-echo "#"
-echo "#"
-read -p "Limpar arquivos desnecessarios da instalação do asterisk, enter para continuar..."
+echo -e "\e[1;35m#\e[0m"
+echo -e "\e[1;35m#\e[0m"
+echo -e "\e[1;36mLIMPAR ARQUIVOS DESNECESSÁRIOS DA INSTALAÇÃO DO ASTERISK, ENTER PARA CONTINUAR\e[0m"
+read -p ""
 
 ##clean files, not used 
 echo "" > /etc/asterisk/func_odbc.conf
@@ -274,11 +272,10 @@ echo "" > /etc/asterisk/cdr_beanstalkd.conf
 echo "" > /etc/asterisk/cel_custom.conf
 echo "" > /etc/asterisk/cel_pgsql.conf
 
-echo "#"
-echo "#"
-echo "#"
-echo "#"
-read -p "Instalar o Mysql, enter para continuar..."
+echo -e "\e[1;35m#\e[0m"
+echo -e "\e[1;35m#\e[0m"
+echo -e "\e[1;36mINSTALAR O MYSQL, ENTER PARA CONTINUAR\e[0m"
+read -p ""
 
 ##install mysql for asterisk20lts, fazer manualmente.
 
@@ -353,7 +350,5 @@ mv config.ini.sample config.ini
 
 ##Configurando parametros do MariaDB como senha
 /usr/bin/mysql_secure_installation
-echo "#"
-echo "#"
-echo "#"
+
 echo -e "\e[1;32mINSTALAÇÃO FINALIZADA COM SUCESSO........\e[0m"
