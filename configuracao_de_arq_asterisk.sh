@@ -5,7 +5,7 @@ mv asterisk/*.ini /etc/
 rm -rf asterisk.tar
 rm -rf asterisk/
 
-#Configurar os arquivos cdr_adaptive_odbc.conf e res_odbc.conf com dados de acesso do BD
+#Configurar os arquivos com dados de acesso do BD
 cd /etc/asterisk/
 vim cdr_adaptive_odbc.conf
 vim res_odbc.conf
@@ -13,6 +13,26 @@ vim res_odbc.conf
 cd /etc/
 vim odbc.ini
 vim odbcinst.ini
+
+#Configurar os arquivos pjsip.conf
+'''
+[global]
+user_agent=callphone
+keep_alive_interval=90
+;endpoint_identifier_order=ip,username,anonymous,header,auth_username
+
+[acl]
+type=acl
+permit=0.0.0.0/0.0.0.0
+
+[utrunk]
+type=transport
+protocol=udp
+bind=0.0.0.0:5060
+allow_reload=yes
+tos=cs3
+cos=3
+'''
 
 #Inserts para criar ramais:
 ->insert na tabela ps_aors:
