@@ -29,30 +29,11 @@ bash 9-install_completa.sh
 
 - Instalação do MySql e bibliotecas para utilizar com o Asterisk - [4 - Setup_mysql_asterisk](4-setup_mysql_asterisk.sh)<br />
 
-- Instalação completa - [9 - Instalação completa](https://github.com/dnsrodrigues/Asterisk-20LTS/blob/main/9-install_completa.sh)<br /><br />
+- Instalação completa - [9 - Instalação completa](https://github.com/dnsrodrigues/Asterisk-20LTS/blob/main/9-install_completa.sh)<br />
 
-- *[Configuração de BD](https://github.com/dnsrodrigues/Asterisk-20LTS/blob/main/configuracao_de_bd.sh)<br /><br />
+- #[Configuração de BD](https://github.com/dnsrodrigues/Asterisk-20LTS/blob/main/configuracao_de_bd.sh)<br />
 
-**-> Mover arquivos de configuração para os diretorios corretos**<br /> 
-```
-cd /tmp/
-mv asterisk/*.conf /etc/asterisk/
-mv asterisk/*.ini /etc/
-rm -rf asterisk.tar
-rm -rf asterisk/
-```
-
-**-> Configurar os arquivos cdr_adaptive_odbc.conf e res_odbc.conf com dados de acesso do BD**<br /> 
-```
-cd /etc/asterisk/
-vim cdr_adaptive_odbc.conf
-vim res_odbc.conf
-
-cd /etc/
-vim odbc.ini
-vim odbcinst.ini
-```
-
+- #[Configuração de arquivos de configução do Asterisk](https://github.com/dnsrodrigues/Asterisk-20LTS/blob/main/configuracao_de_arq_asterisk.sh)<br /><br />
 
 - [DUMP Database](sql/dump-mysql.sql)<br />
 
