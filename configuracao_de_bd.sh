@@ -14,6 +14,8 @@ quit;
 vim /usr/src/asterisk/contrib/ast-db-manage/config.ini
 
 #Configurando o arquivo alembic.ini
+. /venv/bin/activate
+
 cd /usr/src/asterisk/contrib/ast-db-manage
 alembic -c config.ini upgrade head
 
