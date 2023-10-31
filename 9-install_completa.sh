@@ -108,7 +108,7 @@ curl -sL http://downloads.asterisk.org/pub/telephony/asterisk/asterisk-20-curren
 echo "Install source mp3"
 ./contrib/scripts/get_mp3_source.sh && \
 contrib/scripts/install_prereq install && \
-./configure --prefix=/usr --libdir=/usr/lib --with-pjproject-bundled --with-jansson-bundled --with-resample --with-ssl=ssl --with-srtp > /dev/null
+configure --prefix=/usr --libdir=/usr/lib --with-pjproject-bundled --with-jansson-bundled --with-resample --with-ssl=ssl --with-srtp > /dev/null
 : ${JOBS:=$(( $(nproc) + $(nproc) / 2 ))}
 
 make menuselect/menuselect menuselect-tree menuselect.makeopts && \
