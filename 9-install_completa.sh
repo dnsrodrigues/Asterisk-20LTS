@@ -35,8 +35,6 @@ echo -e "\e[1;36mCOMEÇAR A INSTALAR O ASTERISK, ENTER PARA CONTINUAR\e[0m"
 read -p ""
 
 ## ambiente de produção - Asterisk 20
-#!/bin/bash
-
 set -ueo pipefail
 
 # Atualiza o sistema
