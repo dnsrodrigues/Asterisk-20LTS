@@ -14,6 +14,12 @@ cd /etc/
 vim odbc.ini
 vim odbcinst.ini
 
+#entrar no CLI do Asterisk e ver o log de erros:
+'''
+asterisk -rvvv
+core reload
+'''
+
 #Configurar os arquivos pjsip.conf
 '''
 [global]
