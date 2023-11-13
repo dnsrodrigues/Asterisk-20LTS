@@ -14,6 +14,32 @@ cd /etc/
 vim odbc.ini
 vim odbcinst.ini
 
+#Criar um arquivo de inicialização do Asterisk "asterisk.service"
+#Colar o arquivo no caminho /etc/systemd/system/ com o conteudo a baixo:
+[Unit]
+Description=Asterisk PBX and telephony daemon
+After=network.target
+
+[Service]
+Type=forking
+PIDFile=/var/run/asterisk/asterisk.pid
+ExecStart=/usr/sbin/asterisk -C /etc/asterisk/asterisk.conf
+ExecReload=/bin/kill -HUP $MAINPID
+ExecStop=/bin/kill -TERM $MAINPID
+
+[Install]
+WantedBy=multi-user.target
+
+#Recarregue os serviços do systemd para reconhecer as alterações e inicie o serviço do Asterisk:
+systemctl daemon-reload
+systemctl start asterisk
+
+#Habilite o serviço para iniciar automaticamente no boot
+systemctl enable asterisk
+
+#Agora, verifique o status do serviço:
+systemctl status asterisk
+
 #entrar no CLI do Asterisk e ver o log de erros:
 '''
 asterisk -rvvv
