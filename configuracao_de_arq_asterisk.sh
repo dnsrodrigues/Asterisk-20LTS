@@ -106,3 +106,11 @@ exten => 1003,1,Dial(PJSIP/1003,30,rtT)
 exten => 1003,2,Hangup()
 
 ;exten => _.X,1,Dial(PJSIP/55${EXTEN}@bashtech_tronco,40,rtT)
+
+#Configurar arquivo log full ativar a opção full.log e dar um restart no asterisk:
+vim /etc/asterisk/logger.conf
+
+#Visualizar log full:
+less /var/log/asterisk/full.log
+
+
