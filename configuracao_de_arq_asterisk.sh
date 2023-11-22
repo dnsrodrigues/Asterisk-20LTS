@@ -113,4 +113,21 @@ vim /etc/asterisk/logger.conf
 #Visualizar log full:
 less /var/log/asterisk/full.log
 
+#Colocar os audios em pt-br, criar diretorio em:
+mkdir /var/lib/asterisk/sounds/pt-br
 
+#baixar e descompactar os arquivos no diretorio criado:
+cd /var/lib/asterisk/sounds/pt-br
+curl -sLO https://www.asterisksounds.org/sites/asterisksounds.org/files/sounds/pt-BR/download/asterisk-sounds-core-pt-BR-3.8.3.zip && unzip -q asterisk-sounds-core-pt-BR-3.8.3.zip
+curl -sLO https://www.asterisksounds.org/sites/asterisksounds.org/files/sounds/pt-BR/download/asterisk-sounds-extra-pt-BR-1.11.10.zip && unzip -q asterisk-sounds-extra-pt-BR-1.11.10.zip
+
+#Excluir os arquivos zip baixados após extração:
+cd /var/lib/asterisk/sounds/pt-br
+rm asterisk-sounds-core-pt-BR-3.8.3.zip
+rm asterisk-sounds-extra-pt-BR-1.11.10.zip
+
+#Alterar a permissão da pasta:
+find /var/lib/asterisk//sounds//pt-br/ -type d -exec chmod 0775 {} \;
+
+#Converter formato de todos os audios para o formato dos codecs necessarios:
+wget https://raw.githubusercontent.com/Mazuco/Asterisk/master/convert.sh ; bash convert.sh
