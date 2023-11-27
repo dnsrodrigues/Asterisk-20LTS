@@ -47,24 +47,6 @@ core reload
 '''
 
 #Configurar os arquivos no caminho /etc/asterisk pjsip.conf
-'''
-[global]
-user_agent=callphone
-keep_alive_interval=90
-;endpoint_identifier_order=ip,username,anonymous,header,auth_username
-
-[acl]
-type=acl
-permit=0.0.0.0/0.0.0.0
-
-[utrunk]
-type=transport
-protocol=udp
-bind=0.0.0.0:5060
-allow_reload=yes
-tos=cs3
-cos=3
-'''
 
 #Dar um restart no Asterisk:
 '''
