@@ -21,15 +21,6 @@ bash 4-setup_mysql_asterisk.sh
 bash 9-install_completa.sh
 ```
 
-- Criando usuário e senha para o banco de dados:
-``` 
-CREATE USER 'asterisk'@'localhost' IDENTIFIED BY '123456';
-CREATE DATABASE asterisk;
-GRANT ALL privileges on asterisk.* to 'asterisk'@'localhost' identified by '123456';
-FLUSH privileges;
-quit; 
-```
-
 - Customização Terminal - [1 - Terminal Custon](1-terminal_custom.sh)<br />
 
 - Instalação do Asterisk 20 LTS - [2 - Install Asterisk](2-install_asterisk.sh)<br />
