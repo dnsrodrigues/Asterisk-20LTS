@@ -1,10 +1,10 @@
-## Coniguração BD:<br />
+## Configuração BD:<br />
 
 - Acessando o banco de dados:<br />
 ``` 
 mysql -u root 
 ```
-<br/><br/>
+<br/>
 
 - Criando usuário e senha para o banco de dados:
 ``` 
@@ -14,13 +14,13 @@ GRANT ALL privileges on asterisk.* to 'asterisk'@'localhost' identified by '1234
 FLUSH privileges;
 quit; 
 ```
-<br/><br/>
+<br/>
 
 - Configurando o arquivo config.ini usuario e senha do banco de dados:
 ```
 vim /usr/src/asterisk/contrib/ast-db-manage/config.ini
 ```
-<br/><br/>
+<br/>
 
 - Configurando o arquivo alembic.ini:
 ```
@@ -29,13 +29,13 @@ vim /usr/src/asterisk/contrib/ast-db-manage/config.ini
 cd /usr/src/asterisk/contrib/ast-db-manage
 alembic -c config.ini upgrade head
 ```
-<br/><br/>
+<br/>
 
 - Acessando o banco de dados:
 ```
 mysql -u asterisk -p
 ```
-<br/><br/>
+<br/>
 
 - Verificando se o banco de dados foi criado
 ```
@@ -44,7 +44,7 @@ use asterisk;
 show tables;
 quit;
 ```
-<br/><br/>
+<br/>
 
 - Criando usuário e senha para o banco de dados phpmyadmin
 ```
@@ -57,13 +57,13 @@ grant all on phpmyadmin.*to user@localhost;
 FLUSH privileges;
 quit;
 ```
-<br/><br/>
+<br/>
 
 - Acessar BD pelo phpmyadmin
 ```
 ip-da-maquina/phpmyadmin (no navegador)
 ```
-<br/><br/>
+<br/>
 
 - Criar tabela faltante
 ```
